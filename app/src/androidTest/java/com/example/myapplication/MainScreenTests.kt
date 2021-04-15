@@ -6,9 +6,8 @@ import com.example.myapplication.Screens.MainScreen
 import org.junit.Test
 import org.junit.runner.RunWith
 
-@RunWith(AndroidJUnit4::class)
-class MainScreenTests: BaseTestCase() {
 
+class MainScreenTests: BaseTestCase() {
 
     @Test
     fun countButtonIsDisplayed() {
@@ -27,15 +26,4 @@ class MainScreenTests: BaseTestCase() {
           .pressCountButton()
           .shouldBeValueInTextView("1")
     }
-
-    @Test
-    fun imageViewIsDisplayed() {
-        MainScreen()
-          .openImageScreen()
-
-        ImageScreen()
-          .shouldBeDisplayedImageScreen()
-    }
-
-
 }
